@@ -8,3 +8,20 @@ As a challenge, every day is solved using a different programming language!
 |-----+------------|
 |  01 | JavaScript |
 |  02 | Python     |
+
+
+Every solution has a =run.sh= file that can be executed to build and run the solution.
+To run all solutions, use the =run.sh= in the root of the repository.
+
+There is also a script to download input files for a given year and day.
+To use it, create a =.cookie= file in the root of the repository with site cookie.
+
+#+begin_src shell
+AOC_COOKIE="input_your_cookie_here"
+#+end_src
+
+Then run the script to download the specified input.
+
+#+begin_src shell
+./download.sh 2015 5
+#+end_src
