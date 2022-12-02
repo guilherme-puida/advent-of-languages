@@ -1,0 +1,10 @@
+#+title: Advent of Languages
+
+These are my solutions to [[https://adventofcode.com][Advent of Code]] 2022 problems.
+
+As a challenge, every day is solved using a different programming language!
+
+| Day | Language   |
+|-----+------------|
+|  01 | JavaScript |
+|  02 | Python     |
