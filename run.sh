@@ -11,3 +11,7 @@ echo
 echo "Day 2 - Python"
 ./day2-python/run.sh
 echo
+
+echo "Day 3 - Ruby"
+./day3-ruby/run.sh
+echo
