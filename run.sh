@@ -15,3 +15,7 @@ echo
 echo "Day 3 - Ruby"
 ./day3-ruby/run.sh
 echo
+
+echo "Day 4 - Lua"
+./day4-lua/run.sh
+echo
