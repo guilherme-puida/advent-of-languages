@@ -34,10 +34,7 @@ for solution in solutions:
 
     solution_file = next(solution.glob("solution.*"))
     solution_text = solution_file.read_text().strip()
-    solution_output = str(
-        subprocess.run([solution / "run.sh"], capture_output=True).stdout,
-        encoding="UTF-8",
-    ).strip()
+    solution_output = (solution / "output").read_text()
 
     content.append(
         SOLUTION_PARTIAL.format(

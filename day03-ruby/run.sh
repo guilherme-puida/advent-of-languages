@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" || exit
 
-ruby solution.rb < ./input
+ruby solution.rb < ./input | tee output

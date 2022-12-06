@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" || exit
 
-lua ./solution.lua < ./input
+lua ./solution.lua < ./input | tee output

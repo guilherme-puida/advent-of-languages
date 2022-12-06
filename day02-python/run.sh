@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" || exit
 
-python solution.py < ./input
+python solution.py < ./input | tee output

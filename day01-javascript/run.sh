@@ -2,4 +2,4 @@
 
 cd "$(dirname "$0")" || exit
 
-node solution.js < input
+node solution.js < input | tee output
