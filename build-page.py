@@ -1,8 +1,7 @@
 import datetime
+import html
 import locale
 import shutil
-import subprocess
-import html
 from pathlib import Path
 
 locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
@@ -31,6 +30,7 @@ content = []
 
 for solution in solutions:
     solution_name = solution.name.replace("-", " - ").title()
+    print(f"Building page for {solution_name}")
 
     solution_file = next(solution.glob("solution.*"))
     solution_text = solution_file.read_text().strip()
