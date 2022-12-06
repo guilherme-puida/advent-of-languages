@@ -2,6 +2,7 @@ import datetime
 import locale
 import shutil
 import subprocess
+import html
 from pathlib import Path
 
 locale.setlocale(locale.LC_ALL, "en_US.UTF-8")
@@ -41,7 +42,7 @@ for solution in solutions:
     content.append(
         SOLUTION_PARTIAL.format(
             solution_name=solution_name,
-            solution_text=solution_text,
+            solution_text=html.escape(solution_text),
             solution_output=solution_output,
         )
     )
