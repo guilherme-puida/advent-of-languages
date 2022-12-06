@@ -23,3 +23,7 @@ echo
 echo "Day 05 - Crystal"
 ./day05-crystal/run.sh
 echo
+
+echo "Day 06 - C"
+./day06-c/run.sh
+echo
