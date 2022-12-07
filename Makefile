@@ -1,5 +1,8 @@
 build-page: all
 	python build-page.py
+	
+html:
+	python build-page.py
 
 all:
 	./run.sh
