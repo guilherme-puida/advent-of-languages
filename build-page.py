@@ -23,10 +23,12 @@ BASE_PARTIAL = (PARTIALS_DIR / "base.html").read_text()
 HEADER_PARTIAL = (PARTIALS_DIR / "header.html").read_text()
 SOLUTION_PARTIAL = (PARTIALS_DIR / "solution.html").read_text()
 FOOTER_PARTIAL = (PARTIALS_DIR / "footer.html").read_text()
+TOC_PARTIAL = (PARTIALS_DIR / "toc.html").read_text()
 
 solutions = sorted(list(BASE_DIR.glob("*day*")))
 
 content = []
+toc = []
 
 for solution in solutions:
     solution_name = solution.name.replace("-", " - ").title()
@@ -38,9 +40,17 @@ for solution in solutions:
 
     content.append(
         SOLUTION_PARTIAL.format(
+            id=solution.name,
             solution_name=solution_name,
             solution_text=html.escape(solution_text),
             solution_output=solution_output,
+        )
+    )
+
+    toc.append(
+        TOC_PARTIAL.format(
+            id=solution.name,
+            name=solution.name.split('-')[1].title()
         )
     )
 
@@ -51,7 +61,7 @@ footer = FOOTER_PARTIAL.format(
 )
 
 complete_page = BASE_PARTIAL.format(
-    header=HEADER_PARTIAL, content="".join(content), footer=footer
+    header=HEADER_PARTIAL.format(toc="".join(toc)), content="".join(content), footer=footer
 )
 
 (DIST_DIR / "index.html").write_text(complete_page)
