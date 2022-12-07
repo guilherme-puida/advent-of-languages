@@ -1,23 +1,36 @@
 body {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: grid;
-    place-content: center;
-    background: #fffff8;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  place-content: center;
+  background: #fffff8;
 }
 
 section {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 pre {
-    background: #eea;
-    padding: 1rem;
-    border-radius: 10px;
+  background: #eea;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px dashed black;
-    padding-bottom: 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed black;
+  padding-bottom: 1rem;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+li + li {
+  margin-top: 5px;
+}
+
+a,
+:visited {
+  color: inherit;
 }
