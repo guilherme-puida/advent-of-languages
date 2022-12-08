@@ -27,3 +27,7 @@ echo
 echo "Day 06 - C"
 ./day06-c/run.sh
 echo
+
+echo "Day 07 - Go"
+./day07-go/run.sh
+echo
