@@ -31,3 +31,7 @@ echo
 echo "Day 07 - Go"
 ./day07-go/run.sh
 echo
+
+echo "Day 08 - Cpp"
+./day08-cpp/run.sh
+echo
