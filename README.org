@@ -12,6 +12,8 @@ As a challenge, every day is solved using a different programming language!
 |  04 | Lua        |
 |  05 | Crystal    |
 |  06 | C          |
+|  07 | Go         |
+|  08 | C++        |
 
 You can also see the solutions and output at [[https://advent.puida.xyz]].
 
