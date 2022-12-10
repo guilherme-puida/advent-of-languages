@@ -35,3 +35,7 @@ echo
 echo "Day 08 - Cpp"
 ./day08-cpp/run.sh
 echo
+
+echo "Day 09 - Clojure"
+./day09-clojure/run.sh
+echo
