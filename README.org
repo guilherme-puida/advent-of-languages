@@ -16,6 +16,7 @@ As a challenge, every day is solved using a different programming language!
 |  08 | C++        |
 |  09 | Clojure    |
 |  10 | Nim        |
+|  11 | Janet      |
 
 You can also see the solutions and output at [[https://advent.puida.xyz]].
 

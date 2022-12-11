@@ -43,3 +43,7 @@ echo
 echo "Day 10 - Nim"
 ./day10-nim/run.sh
 echo
+
+echo "Day 11 - Janet"
+./day11-janet/run.sh
+echo
