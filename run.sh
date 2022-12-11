@@ -39,3 +39,7 @@ echo
 echo "Day 09 - Clojure"
 ./day09-clojure/run.sh
 echo
+
+echo "Day 10 - Nim"
+./day10-nim/run.sh
+echo
