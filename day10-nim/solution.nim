@@ -4,7 +4,7 @@ import std/sugar
 type
     Clock = tuple
         cycle: int
-        signalStrenght: int
+        signalStrength: int
         crt: seq[char]
 
 proc inc(clock: var Clock; x: int) = 
@@ -14,7 +14,7 @@ proc inc(clock: var Clock; x: int) =
     clock.cycle += 1
 
     if clock.cycle in @[20, 60, 100, 140, 180, 220]:
-        clock.signalStrenght += x * clock.cycle
+        clock.signalStrength += x * clock.cycle
 
 proc display(clock: Clock) = 
     for row in 0 ..< 6:
@@ -27,8 +27,8 @@ let lines = readAll(io.stdin).strip().splitLines()
 var x = 1
 
 let initialCrt = collect(newSeq):
-    for _ in 0 ..< 240: '.'
-var clock: Clock = (cycle: 0, signalStrenght: 0, crt: initialCrt)
+    for _ in 0 ..< 240: ' '
+var clock: Clock = (cycle: 0, signalStrength: 0, crt: initialCrt)
 
 for line in lines:
     if line == "noop":
@@ -39,6 +39,6 @@ for line in lines:
         clock.inc(x)
         x += n
 
-echo "Part 1: ", clock.signalStrenght
+echo "Part 1: ", clock.signalStrength
 echo "Part 2:"
 clock.display()
