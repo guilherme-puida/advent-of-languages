@@ -36,6 +36,7 @@ for solution in solutions:
 
     solution_file = next(solution.glob("solution.*"))
     solution_text = solution_file.read_text().strip()
+    tool_version = (solution / "version").read_text()
     solution_output = (solution / "output").read_text()
 
     content.append(
@@ -43,7 +44,7 @@ for solution in solutions:
             id=solution.name,
             solution_name=solution_name,
             solution_text=html.escape(solution_text),
-            solution_output=solution_output,
+            solution_output=f"{tool_version}\n{solution_output}",
         )
     )
 
