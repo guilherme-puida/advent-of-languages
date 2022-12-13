@@ -18,6 +18,7 @@ As a challenge, every day is solved using a different programming language!
 |  10 | Nim        |
 |  11 | Janet      |
 |  12 | Java       |
+|  13 | Julia      |
 
 You can also see the solutions and output at [[https://advent.puida.xyz]].
 
