@@ -3,7 +3,10 @@ using JSON
 less(a::Int, b::Int) = a < b
 less(a::Vector, b::Int) = less(a, [b])
 less(a::Int, b::Vector) = less([a], b)
-less(a::Vector, b::Vector) = !isempty(b) && (isempty(a) || less(a[1], b[1]) || (!less(b[1], a[1]) && less(a[2:end], b[2:end])))
+less(a::Vector, b::Vector) = 
+    !isempty(b) && (isempty(a)
+    || less(a[1], b[1]) 
+    || (!less(b[1], a[1]) && less(a[2:end], b[2:end])))
 
 function read_input()::Vector{Tuple{Vector, Vector}}
     pairs = []
@@ -32,7 +35,7 @@ function part2()
     push!(v, [[2]], [[6]])
     sort!(v, lt=less)
 
-    findfirst(==([[2]]), v) * findfirst(==([[6]]), v)
+    findfirst(x -> x == [[2]], v) * findfirst(x -> x == [[6]], v)
 end
 
 
