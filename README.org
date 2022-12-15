@@ -19,6 +19,8 @@ As a challenge, every day is solved using a different programming language!
 |  11 | Janet      |
 |  12 | Java       |
 |  13 | Julia      |
+|  14 | Dart       |
+|  15 | Rust       |
 
 You can also see the solutions and output at [[https://advent.puida.xyz]].
 
